@@ -94,7 +94,7 @@ lib.fix (self: {
 
       passAsFile = [ "package" "packageLock" ];
       package = toJSON packageJSON';
-      packageLock = toJSON packageLock';
+      packageLock = builtins.trace packageLock' (toJSON packageLock');
 
       dontUnpack = true;
       dontBuild = true;

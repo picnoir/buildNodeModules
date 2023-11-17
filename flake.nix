@@ -25,7 +25,7 @@
 
       packages.x86_64-linux.default =
         buildNodeModules {
-          packageRoot = ./fixtures/kitchen_sink;
+          packageRoot = ./fixtures/gh_ref;
           nodejs = pkgs.nodejs;
         };
 
